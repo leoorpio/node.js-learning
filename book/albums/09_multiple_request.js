@@ -121,6 +121,7 @@ function handle_get_album(req, res) {
 }
 
 function make_error(err, msg) {
+	// new Error([message[, fileName[,lineNumber]]])
 	var e = new Error(msg);
 	e.code = err;
 	return e;
