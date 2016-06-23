@@ -33,7 +33,7 @@ function handle_incoming_requEst(req, res) {
 		var out = { error: null,
 					data: {albums: albums}};
 		res.writeHead(200, {"Content-Type": "application/json"});
-		res.end(JSON.stringify(out) + "\n");
+		res.end("\n" + JSON.stringify(out) + "\n");
 	});
 }
 
